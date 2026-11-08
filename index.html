@@ -1,191 +1,379 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b18">
+<meta name="theme-color" content="#ffffff">
 
-<title>Privacy Policy | ALIEN RUSH</title>
+<title>Privacy Policy | Alien Rush</title>
+
+<meta name="description" content="Read the official ALIEN RUSH Privacy Policy to understand how information is handled when you play our mobile game.">
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #7047eb;
+    --primary-light: #f1edff;
+    --text: #172033;
+    --muted: #687386;
+    --border: #e9ecf2;
+    --background: #f7f8fc;
+    --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --bg: #080b18;
-    --card: #11172b;
-    --text: #edf0ff;
-    --muted: #a0aac5;
-    --primary: #9b6cff;
-    --secondary: #35d9ff;
-    --border: rgba(255,255,255,0.09);
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background:
-        radial-gradient(circle at 15% 0%, #28164b 0%, transparent 35%),
-        radial-gradient(circle at 90% 30%, #102b49 0%, transparent 35%),
-        var(--bg);
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
     color: var(--text);
-    line-height: 1.8;
-    min-height: 100vh;
-    padding: 25px 15px;
-}
-
-.container {
-    max-width: 850px;
-    margin: auto;
-}
-
-.hero {
-    text-align: center;
-    padding: 55px 20px 40px;
-}
-
-.logo {
-    width: 85px;
-    height: 85px;
-    margin: auto auto 18px;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #9b6cff, #35d9ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    box-shadow: 0 0 40px rgba(155,108,255,0.35);
-}
-
-.hero h1 {
-    font-size: clamp(32px, 7vw, 48px);
-    font-weight: 900;
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, #b58aff, #42dfff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-    color: var(--muted);
-    margin-top: 8px;
-}
-
-.updated {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 7px 15px;
-    border: 1px solid var(--border);
-    border-radius: 30px;
-    background: rgba(255,255,255,0.04);
-    color: #c4b2ff;
-    font-size: 13px;
-}
-
-.policy {
-    background: rgba(17,23,43,0.94);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 35px;
-    box-shadow: 0 20px 70px rgba(0,0,0,0.25);
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-section:last-child {
-    margin-bottom: 0;
-}
-
-h2 {
-    color: #b58aff;
-    font-size: 19px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-h2::before {
-    content: "";
-    width: 4px;
-    height: 21px;
-    border-radius: 5px;
-    background: linear-gradient(#b58aff, #35d9ff);
-}
-
-p {
-    color: #c0c9df;
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-
-ul {
-    padding-left: 22px;
-    color: #c0c9df;
-    font-size: 14px;
-}
-
-li {
-    margin-bottom: 7px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-    color: var(--secondary);
+    color: var(--primary);
     text-decoration: none;
-    overflow-wrap: anywhere;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.contact {
-    background: rgba(155,108,255,0.08);
-    border: 1px solid rgba(155,108,255,0.2);
-    border-radius: 15px;
-    padding: 20px;
+/* HEADER */
+
+.header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
 }
 
-.contact p {
-    margin-bottom: 7px;
+.navbar {
+    max-width: 1120px;
+    margin: auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: -0.7px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--primary-light);
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+}
+
+.brand-name span {
+    color: var(--primary);
+}
+
+.nav-label {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* HERO */
+
+.hero {
+    background: var(--white);
+    text-align: center;
+    padding: 75px 20px 65px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 13px;
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 6vw, 52px);
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    max-width: 550px;
+    margin: 18px auto 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.last-updated {
+    margin-top: 24px;
+    display: inline-block;
+    font-size: 12px;
+    color: var(--muted);
+    background: #f6f7fa;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 13px;
+}
+
+/* MAIN LAYOUT */
+
+.container {
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 0 22px;
+}
+
+.intro-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 26px;
+    margin-bottom: 25px;
+}
+
+.intro-card h2 {
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.intro-card p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* POLICY SECTIONS */
+
+.policy-section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 27px 29px;
+    margin-bottom: 17px;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.policy-section:hover {
+    border-color: #d8ceff;
+    box-shadow: 0 5px 20px rgba(30, 35, 60, 0.035);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 15px;
+}
+
+.section-number {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    font-size: 17px;
+    font-weight: 750;
+    letter-spacing: -0.35px;
+}
+
+.policy-section p {
+    font-size: 14px;
+    color: #596579;
+    margin-bottom: 12px;
+}
+
+.policy-section p:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section ul {
+    padding-left: 21px;
+    margin: 12px 0;
+    color: #596579;
+    font-size: 14px;
+}
+
+.policy-section li {
+    padding: 3px 0;
+}
+
+.policy-section strong {
+    color: var(--text);
+}
+
+/* CONTACT */
+
+.contact-card {
+    background: #f8f6ff;
+    border: 1px solid #e8e0ff;
+    border-radius: 13px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9e3fa;
+    font-size: 13px;
+}
+
+.contact-row:last-child {
+    border: 0;
+}
+
+.contact-label {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.contact-value {
+    color: var(--text);
+    font-weight: 700;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* FOOTER */
 
 .footer {
-    text-align: center;
-    color: #75809e;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    padding: 35px 20px;
+}
+
+.footer-inner {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-brand {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.footer-brand span {
+    color: var(--primary);
+}
+
+.footer p {
+    color: var(--muted);
     font-size: 12px;
-    padding: 30px 10px 10px;
+    margin-top: 5px;
 }
 
-.footer span {
-    color: #b58aff;
+.footer-right {
+    color: var(--muted);
+    font-size: 12px;
+    text-align: right;
 }
 
-@media(max-width:600px) {
-    body {
-        padding: 12px;
+/* MOBILE */
+
+@media(max-width: 600px) {
+    .navbar {
+        padding: 15px 18px;
     }
 
-    .hero {
-        padding: 38px 10px 28px;
-    }
-
-    .policy {
-        padding: 23px 18px;
-        border-radius: 17px;
-    }
-
-    h2 {
+    .brand {
         font-size: 17px;
     }
 
-    p, ul {
+    .nav-label {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 55px 18px 45px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .hero p {
         font-size: 13px;
+    }
+
+    .container {
+        margin: 28px auto;
+        padding: 0 13px;
+    }
+
+    .intro-card,
+    .policy-section {
+        padding: 21px 18px;
+        border-radius: 13px;
+    }
+
+    .section-heading h2 {
+        font-size: 15px;
+    }
+
+    .policy-section p,
+    .policy-section ul {
+        font-size: 13px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .contact-value {
+        text-align: left;
     }
 }
 </style>
@@ -193,224 +381,327 @@ a:hover {
 
 <body>
 
-<div class="container">
+<header class="header">
+    <nav class="navbar">
+        <div class="brand">
+            <div class="brand-icon">👾</div>
+            <div class="brand-name">ALIEN<span> RUSH</span></div>
+        </div>
 
-<header class="hero">
-    <div class="logo">👾</div>
-    <h1>ALIEN RUSH</h1>
-    <p>Privacy Policy</p>
-    <div class="updated">Last Updated: November 8, 2026</div>
+        <div class="nav-label">OFFICIAL WEBSITE</div>
+    </nav>
 </header>
 
-<main class="policy">
+<section class="hero">
+    <div class="hero-badge">
+        <span>●</span> LEGAL & PRIVACY
+    </div>
 
-<section>
-<h2>1. Introduction</h2>
-<p>
-Welcome to ALIEN RUSH, a mobile arcade survival game
-developed by Sumit Sharma.
-</p>
-<p>
-Your privacy is important to us. This Privacy Policy
-explains how information may be collected, used,
-shared and protected when you play ALIEN RUSH.
-</p>
+    <h1>Privacy <span>Policy</span></h1>
+
+    <p>
+        Your privacy matters to us. Learn how ALIEN RUSH
+        handles information when you enjoy our mobile game.
+    </p>
+
+    <div class="last-updated">
+        Last Updated: November 8, 2026
+    </div>
 </section>
 
-<section>
-<h2>2. Information We Collect</h2>
-<p>
-ALIEN RUSH does not require users to create an account
-or provide their name, phone number or email address
-to play.
-</p>
-<p>
-However, third-party services integrated into the game
-may automatically collect certain information, including:
-</p>
-<ul>
-<li>Device information and device identifiers.</li>
-<li>IP address.</li>
-<li>Advertising identifiers.</li>
-<li>Advertising interactions.</li>
-<li>Game usage and interaction information.</li>
-<li>Crash reports and diagnostic information.</li>
-</ul>
-<p>
-The information collected depends on the services and
-settings used on your device.
-</p>
-</section>
+<main class="container">
 
-<section>
-<h2>3. Advertising and Google AdMob</h2>
-<p>
-ALIEN RUSH may display advertisements through Google
-AdMob, including rewarded and interstitial advertisements.
-</p>
-<p>
-Google AdMob and its partners may collect and use
-information such as device identifiers, IP addresses
-and advertising interactions to display advertisements,
-measure performance and prevent fraud.
-</p>
-<p>
-For more information, visit:
-<a href="https://policies.google.com/privacy"
-target="_blank" rel="noopener">
-Google Privacy Policy
-</a>.
-</p>
-</section>
+    <div class="intro-card">
+        <h2>Welcome to ALIEN RUSH</h2>
+        <p>
+            This Privacy Policy applies to the ALIEN RUSH mobile
+            game developed by Sumit Sharma. It explains what
+            information may be collected through the game,
+            how third-party services may use that information,
+            and how you can contact us with privacy questions.
+        </p>
+    </div>
 
-<section>
-<h2>4. Third-Party Services</h2>
-<p>ALIEN RUSH may use the following services:</p>
-<ul>
-<li><strong>Google AdMob:</strong> Advertising services.</li>
-<li><strong>Google Play Services:</strong> Game distribution
-and related platform services.</li>
-</ul>
-<p>
-These services operate under their own privacy policies
-and data practices.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">01</div>
+            <h2>Introduction</h2>
+        </div>
+        <p>
+            Welcome to ALIEN RUSH, a mobile arcade survival game.
+            We respect your privacy and are committed to
+            transparency about information associated with
+            your use of the game.
+        </p>
+        <p>
+            Please read this Privacy Policy carefully to
+            understand our privacy practices.
+        </p>
+    </section>
 
-<section>
-<h2>5. Children's Privacy</h2>
-<p>
-ALIEN RUSH is intended for users aged 13 years and older.
-The game is not specifically designed or marketed for
-children under 13.
-</p>
-<p>
-We do not knowingly collect personal information directly
-from children under 13. If we become aware that personal
-information has been collected directly from a child
-without appropriate authorization, we will take reasonable
-steps to address the situation.
-</p>
-<p>
-Advertising and data collection are subject to applicable
-privacy laws and Google Play policies.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">02</div>
+            <h2>Information We Collect</h2>
+        </div>
+        <p>
+            ALIEN RUSH does not require users to create an
+            account or provide their name, phone number,
+            or email address to play.
+        </p>
+        <p>
+            Third-party services integrated into the game
+            may automatically collect certain information,
+            depending on the services and device settings:
+        </p>
+        <ul>
+            <li>Device information and device identifiers.</li>
+            <li>IP address.</li>
+            <li>Advertising identifiers.</li>
+            <li>Advertising interactions.</li>
+            <li>Game usage and interaction information.</li>
+            <li>Crash reports and diagnostic information.</li>
+        </ul>
+    </section>
 
-<section>
-<h2>6. How We Use Information</h2>
-<p>
-Information collected through third-party services may
-be used to:
-</p>
-<ul>
-<li>Provide and display advertisements.</li>
-<li>Improve game stability and performance.</li>
-<li>Detect technical problems.</li>
-<li>Prevent fraud and abuse.</li>
-<li>Measure advertising effectiveness.</li>
-</ul>
-<p>We do not sell personal information collected directly by us.</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">03</div>
+            <h2>Advertising & Google AdMob</h2>
+        </div>
+        <p>
+            ALIEN RUSH may display advertisements through
+            Google AdMob, including rewarded and interstitial
+            advertisements.
+        </p>
+        <p>
+            Google AdMob and its partners may process
+            information such as device identifiers, IP
+            addresses, and advertising interactions for
+            advertisement delivery, performance measurement,
+            and fraud prevention.
+        </p>
+        <p>
+            Learn more about Google's privacy practices:
+            <a href="https://policies.google.com/privacy"
+               target="_blank" rel="noopener noreferrer">
+                Google Privacy Policy
+            </a>.
+        </p>
+    </section>
 
-<section>
-<h2>7. Data Sharing</h2>
-<p>
-ALIEN RUSH does not operate its own user-account
-registration system.
-</p>
-<p>
-Information may be processed by third-party service
-providers, including Google AdMob and Google Play Services,
-according to their respective privacy policies.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">04</div>
+            <h2>Third-Party Services</h2>
+        </div>
+        <p>Our game may use the following third-party services:</p>
+        <ul>
+            <li>
+                <strong>Google AdMob:</strong>
+                Advertising services.
+            </li>
+            <li>
+                <strong>Google Play Services:</strong>
+                Game distribution and related platform services.
+            </li>
+        </ul>
+        <p>
+            These services may process information according
+            to their own privacy policies and practices.
+        </p>
+    </section>
 
-<section>
-<h2>8. Data Security</h2>
-<p>
-We take reasonable measures to protect information
-associated with ALIEN RUSH. However, no method of
-electronic storage or internet transmission is completely
-secure.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">05</div>
+            <h2>Children's Privacy</h2>
+        </div>
+        <p>
+            ALIEN RUSH is intended for users aged 13 years
+            and older. The game is not specifically designed
+            or marketed for children under 13.
+        </p>
+        <p>
+            We do not knowingly collect personal information
+            directly from children under 13. If we become
+            aware that personal information has been collected
+            directly from a child without appropriate
+            authorization, we will take reasonable steps
+            to address the situation.
+        </p>
+        <p>
+            Advertising and data collection are subject to
+            applicable privacy laws and Google Play policies.
+        </p>
+    </section>
 
-<section>
-<h2>9. Data Retention and Deletion</h2>
-<p>
-Data collected by third-party services is retained
-according to their respective privacy policies and
-retention practices.
-</p>
-<p>
-For privacy-related questions or requests concerning
-information under our control, contact us using the
-email address below.
-</p>
-<p>
-Requests concerning information held by Google or
-other third-party providers may also need to be
-submitted directly to those providers.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">06</div>
+            <h2>How We Use Information</h2>
+        </div>
+        <p>
+            Information processed through third-party
+            services may be used for purposes such as:
+        </p>
+        <ul>
+            <li>Displaying advertisements.</li>
+            <li>Improving game stability and performance.</li>
+            <li>Detecting technical problems.</li>
+            <li>Preventing fraud and abuse.</li>
+            <li>Measuring advertising effectiveness.</li>
+        </ul>
+        <p>
+            We do not sell personal information collected
+            directly by us.
+        </p>
+    </section>
 
-<section>
-<h2>10. Your Privacy Choices</h2>
-<p>
-You may be able to manage advertising preferences
-and privacy settings through your Android device
-and Google's available privacy controls.
-</p>
-<p>
-Learn more:
-<a href="https://policies.google.com/privacy"
-target="_blank" rel="noopener">
-Google Privacy Information
-</a>.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">07</div>
+            <h2>Data Sharing</h2>
+        </div>
+        <p>
+            ALIEN RUSH does not operate its own
+            user-account registration system.
+        </p>
+        <p>
+            Information may be processed by third-party
+            service providers, including Google AdMob and
+            Google Play Services, according to their
+            respective privacy policies.
+        </p>
+    </section>
 
-<section>
-<h2>11. Changes to This Privacy Policy</h2>
-<p>
-We may update this Privacy Policy when necessary.
-Any changes will be published on this page with
-an updated revision date.
-</p>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">08</div>
+            <h2>Data Security</h2>
+        </div>
+        <p>
+            We take reasonable measures to protect
+            information associated with ALIEN RUSH.
+            However, no method of electronic storage
+            or internet transmission is completely secure.
+        </p>
+    </section>
 
-<section>
-<h2>12. Contact Us</h2>
-<div class="contact">
-<p><strong>Game Name:</strong> ALIEN RUSH</p>
-<p><strong>Developer:</strong> Sumit Sharma</p>
-<p>
-<strong>Contact Email:</strong>
-<a href="mailto:12netr1234@gmail.com">
-12netr1234@gmail.com
-</a>
-</p>
-<p>
-<strong>Privacy Policy URL:</strong><br>
-<a href="https://kvinaaaaykumar.github.io/Alienrushprivicy/"
-target="_blank" rel="noopener">
-ALIEN RUSH Privacy Policy
-</a>
-</p>
-</div>
-</section>
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">09</div>
+            <h2>Data Retention & Deletion</h2>
+        </div>
+        <p>
+            Information collected by third-party services
+            is retained according to their respective
+            privacy policies and retention practices.
+        </p>
+        <p>
+            For privacy-related questions or requests
+            concerning information under our control,
+            please contact us using the details below.
+        </p>
+        <p>
+            Requests concerning information held by Google
+            or other third-party providers may also need
+            to be submitted directly to those providers.
+        </p>
+    </section>
+
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">10</div>
+            <h2>Your Privacy Choices</h2>
+        </div>
+        <p>
+            You may be able to manage advertising
+            preferences and privacy settings through
+            your Android device and Google's available
+            privacy controls.
+        </p>
+        <p>
+            For further information, visit:
+            <a href="https://policies.google.com/privacy"
+               target="_blank" rel="noopener noreferrer">
+                Google Privacy Information
+            </a>.
+        </p>
+    </section>
+
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">11</div>
+            <h2>Changes to This Privacy Policy</h2>
+        </div>
+        <p>
+            We may update this Privacy Policy from time
+            to time. Any changes will be published on
+            this page with a revised update date.
+        </p>
+    </section>
+
+    <section class="policy-section">
+        <div class="section-heading">
+            <div class="section-number">12</div>
+            <h2>Contact Us</h2>
+        </div>
+
+        <p>
+            If you have questions, concerns, or privacy-related
+            requests, please contact the developer:
+        </p>
+
+        <div class="contact-card">
+            <div class="contact-row">
+                <span class="contact-label">Game Name</span>
+                <span class="contact-value">ALIEN RUSH</span>
+            </div>
+
+            <div class="contact-row">
+                <span class="contact-label">Developer</span>
+                <span class="contact-value">Sumit Sharma</span>
+            </div>
+
+            <div class="contact-row">
+                <span class="contact-label">Email Address</span>
+                <span class="contact-value">
+                    <a href="mailto:12netr1234@gmail.com">
+                        12netr1234@gmail.com
+                    </a>
+                </span>
+            </div>
+
+            <div class="contact-row">
+                <span class="contact-label">Privacy Policy</span>
+                <span class="contact-value">
+                    <a href="https://kvinaaaaykumar.github.io/Alienrushprivicy/">
+                        Official Policy Page
+                    </a>
+                </span>
+            </div>
+        </div>
+    </section>
 
 </main>
 
 <footer class="footer">
-    © 2026 <span>ALIEN RUSH</span>. All Rights Reserved.
-    <br>
-    Made with care for our players.
-</footer>
+    <div class="footer-inner">
+        <div>
+            <div class="footer-brand">
+                ALIEN<span> RUSH</span>
+            </div>
+            <p>Mobile Gaming Experience</p>
+        </div>
 
-</div>
+        <div class="footer-right">
+            © 2026 ALIEN RUSH. All Rights Reserved.
+            <br>
+            Privacy & Legal Information
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
-```
